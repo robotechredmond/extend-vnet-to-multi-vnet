@@ -190,8 +190,7 @@
             "name": "[variables('gatewayName1')]",
             "location": "[parameters('location1')]",
             "dependsOn": [
-                "[concat('Microsoft.Network/publicIPAddresses/', variables('gatewayPublicIPName1'))]",
-                "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName1'))]"
+                "[concat('Microsoft.Network/publicIPAddresses/', variables('gatewayPublicIPName1'))]"
             ],
             "properties": {
                 "ipConfigurations": [
