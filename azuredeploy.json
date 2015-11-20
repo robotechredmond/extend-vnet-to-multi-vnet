@@ -22,6 +22,7 @@
 
         "location1": {
             "type": "string",
+            "defaultValue": "East US",
             "allowedValues": [
                 "West US",
                 "East US",
@@ -81,15 +82,9 @@
             }
         },
 
-        "sharedKey": {
-            "type": "string",
-            "metadata": {
-                "description": "The shared key used to establish connection between the two VirtualNetworkGateways."
-            }
-         },
-
         "location2": {
             "type": "string",
+            "defaultValue": "West US",
             "allowedValues": [
                 "West US",
                 "East US",
@@ -107,13 +102,20 @@
            "metadata": {
                 "description": "Region in which to deploy the new second VNET"
            }
-        }
+        },
+
+        "sharedKey": {
+            "type": "string",
+            "metadata": {
+                "description": "The shared key used to establish connection between the two VirtualNetworkGateways."
+            }
+         }
 
     },
 
     "variables": {
 
-        "apiVersion": "2015-05-01-preview",
+        "apiVersion": "2015-06-15",
 
         "vnetID1": "[resourceId(parameters('virtualNetworkResourceGroup1'), 'Microsoft.Network/virtualNetworks', parameters('virtualNetworkName1'))]",
         "vnetID2": "[resourceId('Microsoft.Network/virtualNetworks',parameters('virtualNetworkName2'))]",
