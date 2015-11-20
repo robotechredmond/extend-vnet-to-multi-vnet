@@ -7,10 +7,6 @@
             "value": "vnet01"
         },
 
-        "virtualNetworkResourceGroup1": {
-            "value": "vnet01-rg"
-        },
-
         "location1": {
             "value": "East US"
         },

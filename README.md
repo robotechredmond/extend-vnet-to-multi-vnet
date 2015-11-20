@@ -14,7 +14,10 @@ This template extends an existing single VNET environment to a Multi-VNET enviro
 
 ## Special Notes
 
-+ To be successful in extending to a Multi-VNET configuration using this template, use the resource group of the existing VNET for this template deployment.
+To be successful in extending to a Multi-VNET configuration using this template, pay particular attention to these special items:
+
++ Use the resource group of the existing VNET for this template deployment
++ Prior to running this template deployment, create a subnet named "GatewaySubnet" on VNET1 with a minimum /29 address prefix
 
 ## Template Parameters
 

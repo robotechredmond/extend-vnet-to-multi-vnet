@@ -12,14 +12,6 @@
             }
         },
 
-        "virtualNetworkResourceGroup1": {
-            "type": "string",
-            "defaultValue": "vnet01-rg",
-            "metadata": {
-                "description": "Name of the existing Resource Group in which the first VNET is provisioned"
-            }
-        },
-
         "location1": {
             "type": "string",
             "defaultValue": "East US",
@@ -117,7 +109,7 @@
 
         "apiVersion": "2015-06-15",
 
-        "vnetID1": "[resourceId(parameters('virtualNetworkResourceGroup1'), 'Microsoft.Network/virtualNetworks', parameters('virtualNetworkName1'))]",
+        "vnetID1": "[resourceId('Microsoft.Network/virtualNetworks',parameters('virtualNetworkName1'))]",
         "vnetID2": "[resourceId('Microsoft.Network/virtualNetworks',parameters('virtualNetworkName2'))]",
 
         "gatewayName1": "[concat(parameters('virtualNetworkName1'),'-gw')]",
