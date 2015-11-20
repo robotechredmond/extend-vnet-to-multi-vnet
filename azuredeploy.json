@@ -129,7 +129,7 @@
         "connectionName1": "[concat(parameters('virtualNetworkName1'),'-gwcon')]",
         "connectionName2": "[concat(parameters('virtualNetworkName2'),'-gwcon')]",
 
-        "gatewaySubnetRef1": "[concat(parameters('vnetID1'),'/subnets/','GatewaySubnet')]",
+        "gatewaySubnetRef1": "[concat(variables('vnetID1'),'/subnets/','GatewaySubnet')]",
         "gatewaySubnetRef2": "[concat(variables('vnetID2'),'/subnets/','GatewaySubnet')]"
 
     },
