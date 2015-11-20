@@ -219,6 +219,7 @@
             "name": "[variables('gatewayName2')]",
             "location": "[parameters('location2')]",
             "dependsOn": [
+                "[concat('Microsoft.Network/virtualNetworkGateways/', variables('gatewayName1'))]",
                 "[concat('Microsoft.Network/publicIPAddresses/', variables('gatewayPublicIPName2'))]",
                 "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName2'))]"
             ],
