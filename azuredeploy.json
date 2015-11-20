@@ -40,7 +40,7 @@
            "metadata": {
                 "description": "Region in which the first existing VNET is provisioned"
            }
-        }
+        },
 
         "virtualNetworkName2": {
             "type": "string",
