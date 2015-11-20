@@ -12,4 +12,10 @@ This template extends an existing single VNET environment to a Multi-VNET enviro
 + VNET gateways on existing and second VNET
 + VNET gateway connections to establish a routable VNET-to-VNET connection between existing and second VNET 
 
+## Special Notes
+
++ To be successful in extending to a Multi-VNET configuration using this template, use the resource group of the existing VNET for this template deployment.
+
+## Template Parameters
+
 Modify parameters file to change default values.
