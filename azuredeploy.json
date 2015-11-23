@@ -265,7 +265,8 @@
             "location": "[parameters('location2')]",
             "dependsOn": [
                 "[concat('Microsoft.Network/virtualNetworkGateways/', variables('gatewayName1'))]",
-                "[concat('Microsoft.Network/virtualNetworkGateways/', variables('gatewayName2'))]"
+                "[concat('Microsoft.Network/virtualNetworkGateways/', variables('gatewayName2'))]",
+                "[concat('Microsoft.Network/connections/', variables('connectionName1'))]"
             ],
             "properties": {
                 "virtualNetworkGateway1": {
